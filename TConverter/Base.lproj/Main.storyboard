@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day" translatesAutoresizingMaskIntoConstraints="NO" id="Ugs-EA-PzL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bPv-8R-GNl">
+                                <rect key="frame" x="84" y="438" width="246" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="0pN-55-JGY"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChanched:" destination="BYZ-38-t0r" eventType="valueChanged" id="5Tb-5l-r2z"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0u-U2-lIo">
+                                <rect key="frame" x="178" y="376" width="58" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dov-c1-QRL">
+                                <rect key="frame" x="171" y="488" width="72" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Vf8-j5-JUy">
+                                <rect key="frame" x="86" y="54" width="242" height="44.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ugs-EA-PzL" secondAttribute="trailing" id="1AZ-21-48M"/>
+                            <constraint firstItem="Vf8-j5-JUy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9wb-ef-hec"/>
+                            <constraint firstItem="Ugs-EA-PzL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A4V-mr-dgr"/>
+                            <constraint firstItem="Q0u-U2-lIo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LoR-s2-s6P"/>
+                            <constraint firstItem="bPv-8R-GNl" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="T3A-iR-8oL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vf8-j5-JUy" secondAttribute="trailing" constant="16" id="XD0-8J-IA2"/>
+                            <constraint firstItem="bPv-8R-GNl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YbM-1Q-xZl"/>
+                            <constraint firstItem="Vf8-j5-JUy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ZyC-4Y-MmV"/>
+                            <constraint firstItem="Dov-c1-QRL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e4f-AU-oUJ"/>
+                            <constraint firstItem="Ugs-EA-PzL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="lcb-Th-Xqy"/>
+                            <constraint firstItem="Dov-c1-QRL" firstAttribute="top" secondItem="bPv-8R-GNl" secondAttribute="bottom" constant="20" id="ltn-T9-MTl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Ugs-EA-PzL" secondAttribute="top" constant="44" id="rWQ-rr-d9H"/>
+                            <constraint firstItem="Vf8-j5-JUy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="upz-6d-Ced"/>
+                            <constraint firstItem="Q0u-U2-lIo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Vf8-j5-JUy" secondAttribute="bottom" constant="40" id="xiI-w3-PWZ"/>
+                            <constraint firstItem="bPv-8R-GNl" firstAttribute="top" secondItem="Q0u-U2-lIo" secondAttribute="bottom" constant="20" id="y8P-9v-9xr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XD0-8J-IA2"/>
+                                <exclude reference="xiI-w3-PWZ"/>
+                                <exclude reference="9wb-ef-hec"/>
+                                <exclude reference="ZyC-4Y-MmV"/>
+                                <exclude reference="upz-6d-Ced"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="1AZ-21-48M"/>
+                                <include reference="XD0-8J-IA2"/>
+                                <include reference="rWQ-rr-d9H"/>
+                                <include reference="A4V-mr-dgr"/>
+                                <include reference="lcb-Th-Xqy"/>
+                                <include reference="T3A-iR-8oL"/>
+                                <include reference="YbM-1Q-xZl"/>
+                                <include reference="y8P-9v-9xr"/>
+                                <include reference="LoR-s2-s6P"/>
+                                <include reference="e4f-AU-oUJ"/>
+                                <include reference="ltn-T9-MTl"/>
+                                <include reference="upz-6d-Ced"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="XD0-8J-IA2"/>
+                                <include reference="upz-6d-Ced"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="1AZ-21-48M"/>
+                                <include reference="rWQ-rr-d9H"/>
+                                <include reference="A4V-mr-dgr"/>
+                                <include reference="lcb-Th-Xqy"/>
+                                <include reference="T3A-iR-8oL"/>
+                                <include reference="YbM-1Q-xZl"/>
+                                <include reference="y8P-9v-9xr"/>
+                                <include reference="LoR-s2-s6P"/>
+                                <include reference="xiI-w3-PWZ"/>
+                                <include reference="e4f-AU-oUJ"/>
+                                <include reference="ltn-T9-MTl"/>
+                                <include reference="9wb-ef-hec"/>
+                                <include reference="ZyC-4Y-MmV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="1AZ-21-48M"/>
+                                <include reference="rWQ-rr-d9H"/>
+                                <include reference="A4V-mr-dgr"/>
+                                <include reference="lcb-Th-Xqy"/>
+                                <include reference="T3A-iR-8oL"/>
+                                <include reference="YbM-1Q-xZl"/>
+                                <include reference="y8P-9v-9xr"/>
+                                <include reference="LoR-s2-s6P"/>
+                                <include reference="e4f-AU-oUJ"/>
+                                <include reference="ltn-T9-MTl"/>
+                                <include reference="9wb-ef-hec"/>
+                                <include reference="ZyC-4Y-MmV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cenliusLabel" destination="Q0u-U2-lIo" id="aOV-fz-Jmy"/>
+                        <outlet property="fahrenheitLabel" destination="Dov-c1-QRL" id="qhv-Fi-R8L"/>
+                        <outlet property="slider" destination="bPv-8R-GNl" id="7JI-sW-F8t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.75" y="65.217391304347828"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="day" width="375" height="667"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
